@@ -279,3 +279,39 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+///////////// Contact Form///////////////////////
+// Assuming your form has a class of "contact_form"
+const contactForm = document.querySelector('.contact_form');
+
+// Function to reset the form fields
+function resetForm() {
+    contactForm.reset();
+}
+
+// Event listener for form submission
+contactForm.addEventListener('submit', function(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Assuming you're using fetch or AJAX to submit the form data
+    // Replace 'https://api.web3forms.com/submit' with your actual form submission URL
+    fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(contactForm)
+    })
+    .then(response => {
+        if (response.ok) {
+            // If submission is successful, reset the form
+            resetForm();
+            alert('Form submitted successfully!');
+        } else {
+            alert('Form submission failed!');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while submitting the form.');
+    });
+});
+
+
