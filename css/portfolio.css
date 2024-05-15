@@ -90,9 +90,13 @@ header.sticky{
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
+.navbar-list li:hover{
+    background: #1c1c1c;
+}
 
 .navbar-list li a {
     display: inline-block;
+    width: 100%;
     font-size: 25px;
     color: #fff;
     text-decoration: none;
@@ -637,7 +641,7 @@ a.btn:nth-child(2)::before {
 
 .service_popup-content{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr;
     align-items: center;
     column-gap: 3rem;
 }
