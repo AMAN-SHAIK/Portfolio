@@ -90,9 +90,6 @@ header.sticky{
     animation: slideTop 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
 }
-.navbar-list li:hover{
-    background: #1c1c1c;
-}
 
 .navbar-list li a {
     display: inline-block;
@@ -1458,6 +1455,9 @@ footer a i{
         grid-template-columns: 1fr;
         position: relative; 
         padding: 0 7rem
+    }
+    .navbar-list li:hover{
+    background: #1c1c1c;
     }
 }
     
