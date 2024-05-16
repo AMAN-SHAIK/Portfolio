@@ -1413,14 +1413,8 @@ footer a i{
         grid-template-columns: 1fr;
 /*         font-size: 100%; */
     }
-    .portfolio_popup-subtittle{
-        font-size: 60%;
-    }
-    .details_tittle{
-        font-size: 100%;
-    }
     .details_description{
-        font-size: 80%;
+/*         font-size: 80%; */
         margin-bottom: 1rem;
     }
     .contact_container{
@@ -1428,10 +1422,10 @@ footer a i{
         grid-gap: 4rem;
     }
     .portfolio_popup-img{
-        width: 200px;
+        width: 300px;
     }
     .details_info li{
-        font-size: 70%;
+/*         font-size: 70%; */
     }
     .portfolio_popup-close{
     top: 1rem;
