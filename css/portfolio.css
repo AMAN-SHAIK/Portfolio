@@ -1041,7 +1041,7 @@ a.btn:nth-child(2)::before {
 .details_info li{
     margin-bottom: 0.75rem;
     text-transform: capitalize;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
 }
 .details_info li:last-child{
     margin-bottom: 0;
